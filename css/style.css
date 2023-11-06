@@ -1,0 +1,65 @@
+* {
+  margin: 0 ;
+  padding: 0;
+}
+
+d-flex {
+  display: flex;
+}
+
+.h100{
+  height: 100px;
+}
+
+.h200{
+  height: 200px;
+}
+
+.h300 {
+  height: 300px;
+}
+
+.ofh {
+  overflow: hidden;
+}
+
+.w100 {
+  width: 100px;
+}
+.w200 {
+  width: 200px;
+}
+
+.w300 {
+  width: 300px;
+}
+
+.w1200 {
+  width: 1200px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.swiper-wrapper {
+  width: 100000px;
+
+}
+
+/* ↓ 이건 지금 이미지가 없어서 눈에 보일라고 대체한거임*/
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
