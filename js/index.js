@@ -5,12 +5,13 @@ $(document).ready(function () {
   // $(태그).css(스타일, 스타일 값)
   // $(옮길태그).appendTo($(부모가 될 태그))
 
-  const aniw = $(".swiper-slide").width(); // $(".swiper-wraper").css("width"); 랑 같음. css에서 width 값을 가져오란 소리
+  const aniw = $(".swiper-slide").height(); // $(".swiper-wraper").css("width"); 랑 같음. css에서 width 값을 가져오란 소리
   
   setInterval(function () {
-    $(".swiper-wrapper").animate({ "marginLeft": -aniw }, 400, function () { 
+    $(".swiper-wrapper").animate({ "marginTop": -aniw }, 400,
+      function () { 
       $(".swiper-slide").eq(0).appendTo($(".swiper-wrapper")) 
-      $(".swiper-wrapper").css("marginLeft",0) 
+      $(".swiper-wrapper").css("marginTop",0) 
     })
   }, 3000)
 })
