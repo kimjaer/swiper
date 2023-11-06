@@ -5,14 +5,15 @@ $(document).ready(function () {
   // $(태그).css(스타일, 스타일 값)
   // $(옮길태그).appendTo($(부모가 될 태그))
 
-  const aniw = $(".swiper-slide").height(); // $(".swiper-wraper").css("width"); 랑 같음. css에서 width 값을 가져오란 소리
+  let count = 0;
+
+  setInterval(fadeani, 3000)
+
+  function fadeani() { // 선언적 함수
+    count++;
+    count = count % 3; //3이 오는 주기마다 0으로 바꿈
+    $(".swiper-slide").eq(count).addClass("on").siblings().removeClass("on")
   
-  setInterval(function () {
-    $(".swiper-wrapper").animate({ "marginTop": -aniw }, 400,
-      function () { 
-      $(".swiper-slide").eq(0).appendTo($(".swiper-wrapper")) 
-      $(".swiper-wrapper").css("marginTop",0) 
-    })
-  }, 3000)
+  }
 })
 
